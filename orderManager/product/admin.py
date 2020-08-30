@@ -3,9 +3,6 @@ from django.contrib import admin
 from .models import Category, Product
 
 
-# Register your models here.
-# to learn more about this custom admin model https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
-
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     search_fields = ['title']
